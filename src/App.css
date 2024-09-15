@@ -75,6 +75,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 /***** NavBar CSS *****/
 nav.navbar {
   padding: 18px 0;
@@ -83,6 +84,15 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+nav.navbar a {
+  color: #fff !important;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -103,8 +113,49 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
 }
 
+.navbar-dropdown.nav-item.dropdown a {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+  background-color: #121212;
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active,
 .navbar-dropdown.nav-item.dropdown a:hover {
   opacity: 1;
+}
+
+/***** Banner CSS *****/
+.banner-container {
+  position: relative;
+  top: 125px;
+  border: solid 1px white;
+  height: 350px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 125px;
+  background-color: rgb(127, 255, 165);
+}
+
+.banner-container-text {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
